@@ -1,113 +1,231 @@
 import Image from "next/image";
+import {
+  FaSquareGithub,
+  FaLinkedin,
+  FaSquareYoutube,
+  FaReact,
+  FaNodeJs,
+  FaDatabase,
+} from "react-icons/fa6";
+import { SiHtmx } from "react-icons/si";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <header className="flex justify-between items-center py-5 px-3 mb-9">
+        <div className="relative w-64 h-12">
+          <Image
+            src="/images/logo-bemcodado.png"
+            alt="Logo da BemCodado"
+            fill
+          />
         </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
+        <nav>
+          <ul className="flex justify-between gap-1">
+            <li>
+              <a href="https://github.com/claudiocassimiro" target="_blank">
+                <FaSquareGithub size="30" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/claudiocassimiro/"
+                target="_blank"
+              >
+                <FaLinkedin size="30" />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.youtube.com/channel/UCzF6Vl73Gs_-rYw1r37By9Q"
+                target="_blank"
+              >
+                <FaSquareYoutube size="30" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main className="px-3">
+        <section className="mb-9">
+          <h1 className="text-2xl mb-5">
+            Bem-Vindo à <span className="block text-3xl">BemCodado!</span>
+          </h1>
+          <p className="text-lg mb-5 text-justify">
+            Na BemCodado, estamos comprometidos em ajudar você a alcançar seus
+            objetivos de aprendizado e desenvolvimento na área de programação.
+            Nossos serviços de mentoria são projetados para fornecer suporte
+            personalizado e orientação especializada para estudantes,
+            profissionais e entusiastas de tecnologia.
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
+          <a
+            href="#plans"
+            className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600"
+          >
+            Conheça nossos planos!
+          </a>
+        </section>
+        <section className="mb-9">
+          <h2 className="text-2xl mb-5">Tecnologias</h2>
+          <ul className="flex flex-col gap-2">
+            <li className="flex items-center gap-1">
+              <SiHtmx size="20" /> Fundamentos do Desenvolvimento de Software
+            </li>
+            <li className="flex items-center gap-1">
+              <FaReact size="20" /> Front-End
+            </li>
+            <li className="flex items-center gap-1">
+              <FaNodeJs size="20" /> Back-end
+            </li>
+            <li className="flex items-center gap-1">
+              <FaDatabase size="20" /> Banco de Dados (SQL & NoSQL)
+            </li>
+          </ul>
+        </section>
+        <section className="mb-9">
+          <h2 className="text-2xl mb-5">Por que Escolher a BemCodado?</h2>
+          <ul className="flex flex-col gap-3 border rounded p-3 shadow-md">
+            <li className="text-lg text-justify">
+              <strong>Experiência Comprovada:</strong> Nossos mentores têm vasta
+              experiência na indústria de tecnologia e estão comprometidos em
+              ajudá-lo a ter sucesso em sua jornada de aprendizado.
+            </li>
+            <li className="text-lg text-justify">
+              <strong>Abordagem Prática:</strong> Nossas sessões de mentoria são
+              práticas e orientadas para resultados, focadas em ajudá-lo a
+              aplicar seus conhecimentos em projetos reais.
+            </li>
+            <li className="text-lg text-justify">
+              <strong>Flexibilidade:</strong> Oferecemos horários flexíveis para
+              se adequar à sua agenda ocupada. Escolha entre sessões individuais
+              ou em grupo, e trabalhe no seu próprio ritmo.
+            </li>
+            <li>
+              <strong>Suporte Contínuo:</strong> Estamos aqui para apoiá-lo em
+              cada etapa do seu caminho de aprendizado. Além das sessões de
+              mentoria, oferecemos recursos adicionais, materiais de estudo e
+              suporte por e-mail para garantir que você alcance seus objetivos.
+            </li>
+          </ul>
+        </section>
+        <section id="plans" className="mb-9">
+          <h2 className="text-2xl mb-5">
+            Comece Sua Jornada de Aprendizado Conosco!
           </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
+          <p className="text-lg mb-5 text-justify">
+            Explore nossos serviços de mentoria hoje e dê o próximo passo em
+            direção ao seu sucesso na programação. Junte-se à comunidade
+            BemCodado e transforme suas aspirações em realidade.
           </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+          <section className="mb-5">
+            <h2 className="text-xl mb-1">Mentoria em Grupo</h2>
+            <p className="text-lg mb-1">Aqui você terá:</p>
+            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+              <li className="text-justify">
+                - Sessões diárias de mentoria em grupo no Discord, de segunda a
+                sexta-feira, com foco em tópicos específicos.
+              </li>
+              <li className="text-justify">
+                - Acesso a materiais de estudo, recursos e exercícios práticos.
+              </li>
+              <li className="text-justify">
+                - Suporte por e-mail ou mensagem para dúvidas adicionais entre
+                as sessões.
+              </li>
+            </ul>
+            <p className="text-lg mb-2">Valor Fixo Mensal: R$ 250,00</p>
+            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              Inscrever-se
+            </button>
+          </section>
+          <section className="mb-5">
+            <h2 className="text-xl mb-1">Mentoria Individual</h2>
+            <p className="text-lg mb-1">Aqui você terá:</p>
+            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+              <li className="text-justify">
+                - Sessões individuais personalizadas com foco nos objetivos e
+                necessidades específicas de cada aluno.
+              </li>
+              <li className="text-justify">
+                - Sessões disponíveis de segunda a sexta-feira.
+              </li>
+              <li className="text-justify">
+                - Acesso prioritário para agendamento de sessões.
+              </li>
+              <li className="text-justify">
+                - Revisão e feedback detalhados sobre projetos, portfólio ou
+                trabalhos específicos.
+              </li>
+              <li className="text-justify">
+                - Suporte por e-mail ou mensagem para dúvidas adicionais entre
+                as sessões.
+              </li>
+            </ul>
+            <p className="text-lg mb-1">Valor Fixo Mensal: R$ 500,00</p>
+            <p className="text-lg mb-2">
+              Valor Avulso por Sessão Individual: R$ 75,00
+            </p>
+            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              Inscrever-se
+            </button>
+          </section>
+          <section className="mb-5">
+            <h2 className="text-xl mb-1">Plano de 6 Meses</h2>
+            <p className="text-lg mb-1">Mentoria em Grupo:</p>
+            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+              <li className="text-justify">
+                Valor Mensal: de <span className="line-through">R$250,00</span>{" "}
+                por R$ 210,00
+              </li>
+              <li className="text-justify">
+                Valor Total (6 Meses): R$ 1260,00 (desconto de R$ 240,00)
+              </li>
+            </ul>
+            <p className="text-lg mb-1">Mentoria Individual:</p>
+            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-5">
+              <li className="text-justify">
+                Valor Mensal: de <span className="line-through">R$504,00</span>{" "}
+                por R$ 416,00
+              </li>
+              <li className="text-justify">
+                Valor Total (6 Meses): R$ 2496,00 (desconto de R$ 504,00)
+              </li>
+            </ul>
+            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              Inscrever-se
+            </button>
+          </section>
+          <section className="mb-5">
+            <h2 className="text-xl mb-1">Plano de 1 Ano</h2>
+            <p className="text-lg mb-1">Mentoria em Grupo:</p>
+            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+              <li className="text-justify">
+                Valor Mensal: de <span className="line-through">R$250,00</span>{" "}
+                por R$ 208,00
+              </li>
+              <li className="text-justify">
+                Valor Total (1 Ano): R$ 2496,00 (desconto de R$ 504,00)
+              </li>
+            </ul>
+            <p className="text-lg mb-1">Mentoria Individual:</p>
+            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-5">
+              <li className="text-justify">
+                Valor Mensal: de <span className="line-through">R$500,00</span>{" "}
+                por R$ 416,00
+              </li>
+              <li className="text-justify">
+                Valor Total (1 Ano): R$ 4992,00 (desconto de R$ 1008,00)
+              </li>
+            </ul>
+            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              Inscrever-se
+            </button>
+          </section>
+        </section>
+      </main>
+      <footer className="flex justify-center p-2">
+        <p>&copy; 2024 BemCodado. Todos os direitos reservados.</p>
+      </footer>
+    </>
   );
 }
