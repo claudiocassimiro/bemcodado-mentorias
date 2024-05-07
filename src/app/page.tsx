@@ -84,7 +84,7 @@ export default function Home() {
         </section>
         <section className="mb-9">
           <h2 className="text-2xl mb-5">Por que Escolher a BemCodado?</h2>
-          <ul className="flex flex-col gap-3 border rounded p-3 shadow-md">
+          <ul className="flex flex-col gap-3 border rounded p-3 shadow-xl">
             <li className="text-lg text-justify">
               <strong>Experiência Comprovada:</strong> Nossos mentores têm vasta
               experiência na indústria de tecnologia e estão comprometidos em
@@ -117,7 +117,7 @@ export default function Home() {
             direção ao seu sucesso na programação. Junte-se à comunidade
             BemCodado e transforme suas aspirações em realidade.
           </p>
-          <section className="mb-5">
+          <section className="mb-5 border rounded p-2 shadow-xl">
             <h2 className="text-xl mb-1">Mentoria em Grupo</h2>
             <p className="text-lg mb-1">Aqui você terá:</p>
             <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
@@ -138,7 +138,7 @@ export default function Home() {
               Inscrever-se
             </button>
           </section>
-          <section className="mb-5">
+          <section className="mb-5 border rounded p-2 shadow-xl">
             <h2 className="text-xl mb-1">Mentoria Individual</h2>
             <p className="text-lg mb-1">Aqui você terá:</p>
             <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
@@ -169,7 +169,7 @@ export default function Home() {
               Inscrever-se
             </button>
           </section>
-          <section className="mb-5">
+          <section className="mb-5 border rounded p-2 shadow-xl">
             <h2 className="text-xl mb-1">Plano de 6 Meses</h2>
             <p className="text-lg mb-1">Mentoria em Grupo:</p>
             <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
@@ -195,7 +195,7 @@ export default function Home() {
               Inscrever-se
             </button>
           </section>
-          <section className="mb-5">
+          <section className="mb-5 border rounded p-2 shadow-xl">
             <h2 className="text-xl mb-1">Plano de 1 Ano</h2>
             <p className="text-lg mb-1">Mentoria em Grupo:</p>
             <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
