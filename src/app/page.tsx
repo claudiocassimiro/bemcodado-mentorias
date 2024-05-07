@@ -12,8 +12,8 @@ import { SiHtmx } from "react-icons/si";
 export default function Home() {
   return (
     <>
-      <header className="flex justify-between items-center py-5 px-3 mb-9">
-        <div className="relative w-64 h-12">
+      <header className="flex justify-between items-center py-5 px-3 mb-9 w-full max-w-[1440px]">
+        <div className="relative w-60 h-12 lg:w-64 lg:h-12">
           <Image
             src="/images/logo-bemcodado.png"
             alt="Logo da BemCodado"
@@ -46,44 +46,118 @@ export default function Home() {
           </ul>
         </nav>
       </header>
-      <main className="px-3">
-        <section className="mb-9">
-          <h1 className="text-2xl mb-5">
-            Bem-Vindo à <span className="block text-3xl">BemCodado!</span>
-          </h1>
-          <p className="text-lg mb-5 text-justify">
-            Na BemCodado, estamos comprometidos em ajudar você a alcançar seus
-            objetivos de aprendizado e desenvolvimento na área de programação.
-            Nossos serviços de mentoria são projetados para fornecer suporte
-            personalizado e orientação especializada para estudantes,
-            profissionais e entusiastas de tecnologia.
-          </p>
-          <a
-            href="#plans"
-            className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600"
-          >
-            Conheça nossos planos!
-          </a>
+      <main className="w-full max-w-[1440px] px-3">
+        <section className="flex flex-col mb-9">
+          {/* A div abaixo vai servir para Mobile */}
+          <div className="flex flex-col lg:hidden">
+            <h1 className="text-2xl md:text-3xl mb-5">
+              Bem-Vindo à <span className="block text-4xl">BemCodado!</span>
+            </h1>
+            <div className="relative w-64 h-64 self-center md:w-96 md:h-96">
+              <Image src="/images/homem-codando.png" alt="homem codando" fill />
+            </div>
+            <p className="text-lg md:text-2xl mb-5 text-justify">
+              Na BemCodado, estamos comprometidos em ajudar você a alcançar seus
+              objetivos de aprendizado e desenvolvimento na área de programação.
+              Nossos serviços de mentoria são projetados para fornecer suporte
+              personalizado e orientação especializada para estudantes,
+              profissionais e entusiastas de tecnologia.
+            </p>
+            <a
+              href="#plans"
+              className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600 md:text-2xl"
+            >
+              Conheça nossos planos!
+            </a>
+          </div>
+          {/* A div abaixo vai servir para desktop */}
+          <div className="hidden lg:flex lg:items-center lg:gap-16">
+            <div className="max-w-[50%]">
+              <h1 className="text-6xl mb-5">
+                Bem-Vindo à <span className="block text-4xl">BemCodado!</span>
+              </h1>
+              <p className="text-2xl mb-5 text-justify">
+                Na BemCodado, estamos comprometidos em ajudar você a alcançar
+                seus objetivos de aprendizado e desenvolvimento na área de
+                programação. Nossos serviços de mentoria são projetados para
+                fornecer suporte personalizado e orientação especializada para
+                estudantes, profissionais e entusiastas de tecnologia.
+              </p>
+              <a
+                href="#plans"
+                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600"
+              >
+                Conheça nossos planos!
+              </a>
+            </div>
+            <div className="relative self-center w-[650px] h-[600px]">
+              <Image src="/images/homem-codando.png" alt="homem codando" fill />
+            </div>
+          </div>
         </section>
-        <section className="mb-9">
-          <h2 className="text-2xl mb-5">Tecnologias</h2>
-          <ul className="flex flex-col gap-2">
-            <li className="flex items-center gap-1">
-              <SiHtmx size="20" /> Fundamentos do Desenvolvimento de Software
-            </li>
-            <li className="flex items-center gap-1">
-              <FaReact size="20" /> Front-End
-            </li>
-            <li className="flex items-center gap-1">
-              <FaNodeJs size="20" /> Back-end
-            </li>
-            <li className="flex items-center gap-1">
-              <FaDatabase size="20" /> Banco de Dados (SQL & NoSQL)
-            </li>
-          </ul>
+        <hr />
+        <section className="flex flex-col mb-9">
+          {/* A div abaixo vai servir para Mobile */}
+          <div className="flex flex-col lg:hidden">
+            <h2 className="text-2xl md:text-3xl my-5">Tecnologias</h2>
+            <div className="relative w-72 h-72 self-center md:w-96 md:h-96">
+              <Image
+                src="/images/pessoas-em-colaboracao.png"
+                alt="pessoas em colaboração"
+                fill
+              />
+            </div>
+            <ul className="flex flex-col gap-2 md:text-2xl">
+              <li className="flex items-center gap-1">
+                <SiHtmx size="20" /> Fundamentos do Desenvolvimento de Software
+              </li>
+              <li className="flex items-center gap-1">
+                <FaReact size="20" /> Front-End
+              </li>
+              <li className="flex items-center gap-1">
+                <FaNodeJs size="20" /> Back-end
+              </li>
+              <li className="flex items-center gap-1">
+                <FaDatabase size="20" /> Banco de Dados (SQL & NoSQL)
+              </li>
+            </ul>
+          </div>
+          {/* A div abaixo vai servir para Desktop */}
+          <div className="hidden lg:flex lg:items-center lg:gap-10">
+            <div className="relative self-center w-[650px] h-[600px]">
+              <Image
+                src="/images/pessoas-em-colaboracao.png"
+                alt="pessoas em colaboração"
+                fill
+              />
+            </div>
+            <div className="w-[60%]">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
+                Tecnologias
+              </h2>
+              <ul className="flex flex-col gap-2 md:text-2xl lg:text-3xl">
+                <li className="flex items-center gap-1">
+                  <SiHtmx size="20" /> Fundamentos do Desenvolvimento de
+                  Software
+                </li>
+                <li className="flex items-center gap-1">
+                  <FaReact size="20" /> Front-End
+                </li>
+                <li className="flex items-center gap-1">
+                  <FaNodeJs size="20" /> Back-end
+                </li>
+                <li className="flex items-center gap-1">
+                  <FaDatabase size="20" /> Banco de Dados (SQL & NoSQL)
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
-        <section className="mb-9">
-          <h2 className="text-2xl mb-5">Por que Escolher a BemCodado?</h2>
+        <hr />
+        <section className="flex flex-col my-9">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
+            Por que Escolher a BemCodado?
+          </h2>
           <ul className="flex flex-col gap-3 border rounded p-3 shadow-xl">
             <li className="text-lg text-justify">
               <strong>Experiência Comprovada:</strong> Nossos mentores têm vasta
@@ -108,7 +182,8 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <section id="plans" className="mb-9">
+        <hr />
+        <section id="plans" className="my-9">
           <h2 className="text-2xl mb-5">
             Comece Sua Jornada de Aprendizado Conosco!
           </h2>
