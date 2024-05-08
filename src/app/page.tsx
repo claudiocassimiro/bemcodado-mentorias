@@ -135,7 +135,7 @@ export default function Home() {
               <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
                 Tecnologias
               </h2>
-              <ul className="flex flex-col gap-2 md:text-2xl lg:text-3xl">
+              <ul className="flex flex-col gap-2 lg:text-3xl">
                 <li className="flex items-center gap-1">
                   <SiHtmx size="20" /> Fundamentos do Desenvolvimento de
                   Software
@@ -154,148 +154,205 @@ export default function Home() {
           </div>
         </section>
         <hr />
-        <section className="flex flex-col my-9">
-          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
-            Por que Escolher a BemCodado?
-          </h2>
-          <ul className="flex flex-col gap-3 border rounded p-3 shadow-xl">
-            <li className="text-lg text-justify">
-              <strong>Experiência Comprovada:</strong> Nossos mentores têm vasta
-              experiência na indústria de tecnologia e estão comprometidos em
-              ajudá-lo a ter sucesso em sua jornada de aprendizado.
-            </li>
-            <li className="text-lg text-justify">
-              <strong>Abordagem Prática:</strong> Nossas sessões de mentoria são
-              práticas e orientadas para resultados, focadas em ajudá-lo a
-              aplicar seus conhecimentos em projetos reais.
-            </li>
-            <li className="text-lg text-justify">
-              <strong>Flexibilidade:</strong> Oferecemos horários flexíveis para
-              se adequar à sua agenda ocupada. Escolha entre sessões individuais
-              ou em grupo, e trabalhe no seu próprio ritmo.
-            </li>
-            <li>
-              <strong>Suporte Contínuo:</strong> Estamos aqui para apoiá-lo em
-              cada etapa do seu caminho de aprendizado. Além das sessões de
-              mentoria, oferecemos recursos adicionais, materiais de estudo e
-              suporte por e-mail para garantir que você alcance seus objetivos.
-            </li>
-          </ul>
+        <section className="flex my-9">
+          {/* A div abaixo vai servir para Mobile */}
+          <div className="flex flex-col lg:hidden">
+            <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
+              Por que Escolher a BemCodado?
+            </h2>
+            <div className="relative w-72 h-72 self-center md:w-96 md:h-96">
+              <Image
+                src="/images/mulher-escolhendo.png"
+                alt="pessoas fazendo uma escolha"
+                fill
+              />
+            </div>
+            <ul className="flex flex-col gap-3 md:text-xl">
+              <li className="text-justify">
+                <strong>Experiência Comprovada:</strong> Nossos mentores têm
+                vasta experiência na indústria de tecnologia e estão
+                comprometidos em ajudá-lo a ter sucesso em sua jornada de
+                aprendizado.
+              </li>
+              <li className="text-justify">
+                <strong>Abordagem Prática:</strong> Nossas sessões de mentoria
+                são práticas e orientadas para resultados, focadas em ajudá-lo a
+                aplicar seus conhecimentos em projetos reais.
+              </li>
+              <li className="text-justify">
+                <strong>Flexibilidade:</strong> Oferecemos horários flexíveis
+                para se adequar à sua agenda ocupada. Escolha entre sessões
+                individuais ou em grupo, e trabalhe no seu próprio ritmo.
+              </li>
+              <li>
+                <strong>Suporte Contínuo:</strong> Estamos aqui para apoiá-lo em
+                cada etapa do seu caminho de aprendizado. Além das sessões de
+                mentoria, oferecemos recursos adicionais, materiais de estudo e
+                suporte por e-mail para garantir que você alcance seus
+                objetivos.
+              </li>
+            </ul>
+          </div>
+          {/* A div abaixo vai servir para Desktop */}
+          <div className="hidden lg:flex lg:justify-center lg:items-center lg:gap-10">
+            <div className="w-[50%]">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
+                Por que Escolher a BemCodado?
+              </h2>
+              <ul className="flex flex-col gap-3 lg:text-xl">
+                <li className="text-justify">
+                  <strong>Experiência Comprovada:</strong> Nossos mentores têm
+                  vasta experiência na indústria de tecnologia e estão
+                  comprometidos em ajudá-lo a ter sucesso em sua jornada de
+                  aprendizado.
+                </li>
+                <li className="text-justify">
+                  <strong>Abordagem Prática:</strong> Nossas sessões de mentoria
+                  são práticas e orientadas para resultados, focadas em ajudá-lo
+                  a aplicar seus conhecimentos em projetos reais.
+                </li>
+                <li className="text-justify">
+                  <strong>Flexibilidade:</strong> Oferecemos horários flexíveis
+                  para se adequar à sua agenda ocupada. Escolha entre sessões
+                  individuais ou em grupo, e trabalhe no seu próprio ritmo.
+                </li>
+                <li>
+                  <strong>Suporte Contínuo:</strong> Estamos aqui para apoiá-lo
+                  em cada etapa do seu caminho de aprendizado. Além das sessões
+                  de mentoria, oferecemos recursos adicionais, materiais de
+                  estudo e suporte por e-mail para garantir que você alcance
+                  seus objetivos.
+                </li>
+              </ul>
+            </div>
+            <div className="relative self-center w-[650px] h-[600px]">
+              <Image
+                src="/images/mulher-escolhendo.png"
+                alt="pessoas em fazendo uma escolha"
+                fill
+              />
+            </div>
+          </div>
         </section>
         <hr />
-        <section id="plans" className="my-9">
-          <h2 className="text-2xl mb-5">
+        <section id="plans" className="flex flex-col my-9">
+          <h2 className="text-2xl md:text-3xl lg:text-4xl mb-5">
             Comece Sua Jornada de Aprendizado Conosco!
           </h2>
-          <p className="text-lg mb-5 text-justify">
+          <p className="mb-5 text-justify lg:text-xl">
             Explore nossos serviços de mentoria hoje e dê o próximo passo em
             direção ao seu sucesso na programação. Junte-se à comunidade
             BemCodado e transforme suas aspirações em realidade.
           </p>
-          <section className="mb-5 border rounded p-2 shadow-xl">
-            <h2 className="text-xl mb-1">Mentoria em Grupo</h2>
-            <p className="text-lg mb-1">Aqui você terá:</p>
-            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
-              <li className="text-justify">
-                - Sessões diárias de mentoria em grupo no Discord, de segunda a
-                sexta-feira, com foco em tópicos específicos.
-              </li>
-              <li className="text-justify">
-                - Acesso a materiais de estudo, recursos e exercícios práticos.
-              </li>
-              <li className="text-justify">
-                - Suporte por e-mail ou mensagem para dúvidas adicionais entre
-                as sessões.
-              </li>
-            </ul>
-            <p className="text-lg mb-2">Valor Fixo Mensal: R$ 250,00</p>
-            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
-              Inscrever-se
-            </button>
-          </section>
-          <section className="mb-5 border rounded p-2 shadow-xl">
-            <h2 className="text-xl mb-1">Mentoria Individual</h2>
-            <p className="text-lg mb-1">Aqui você terá:</p>
-            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
-              <li className="text-justify">
-                - Sessões individuais personalizadas com foco nos objetivos e
-                necessidades específicas de cada aluno.
-              </li>
-              <li className="text-justify">
-                - Sessões disponíveis de segunda a sexta-feira.
-              </li>
-              <li className="text-justify">
-                - Acesso prioritário para agendamento de sessões.
-              </li>
-              <li className="text-justify">
-                - Revisão e feedback detalhados sobre projetos, portfólio ou
-                trabalhos específicos.
-              </li>
-              <li className="text-justify">
-                - Suporte por e-mail ou mensagem para dúvidas adicionais entre
-                as sessões.
-              </li>
-            </ul>
-            <p className="text-lg mb-1">Valor Fixo Mensal: R$ 500,00</p>
-            <p className="text-lg mb-2">
-              Valor Avulso por Sessão Individual: R$ 75,00
-            </p>
-            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
-              Inscrever-se
-            </button>
-          </section>
-          <section className="mb-5 border rounded p-2 shadow-xl">
-            <h2 className="text-xl mb-1">Plano de 6 Meses</h2>
-            <p className="text-lg mb-1">Mentoria em Grupo:</p>
-            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
-              <li className="text-justify">
-                Valor Mensal: de <span className="line-through">R$250,00</span>{" "}
-                por R$ 210,00
-              </li>
-              <li className="text-justify">
-                Valor Total (6 Meses): R$ 1260,00 (desconto de R$ 240,00)
-              </li>
-            </ul>
-            <p className="text-lg mb-1">Mentoria Individual:</p>
-            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-5">
-              <li className="text-justify">
-                Valor Mensal: de <span className="line-through">R$504,00</span>{" "}
-                por R$ 416,00
-              </li>
-              <li className="text-justify">
-                Valor Total (6 Meses): R$ 2496,00 (desconto de R$ 504,00)
-              </li>
-            </ul>
-            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
-              Inscrever-se
-            </button>
-          </section>
-          <section className="mb-5 border rounded p-2 shadow-xl">
-            <h2 className="text-xl mb-1">Plano de 1 Ano</h2>
-            <p className="text-lg mb-1">Mentoria em Grupo:</p>
-            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
-              <li className="text-justify">
-                Valor Mensal: de <span className="line-through">R$250,00</span>{" "}
-                por R$ 208,00
-              </li>
-              <li className="text-justify">
-                Valor Total (1 Ano): R$ 2496,00 (desconto de R$ 504,00)
-              </li>
-            </ul>
-            <p className="text-lg mb-1">Mentoria Individual:</p>
-            <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-5">
-              <li className="text-justify">
-                Valor Mensal: de <span className="line-through">R$500,00</span>{" "}
-                por R$ 416,00
-              </li>
-              <li className="text-justify">
-                Valor Total (1 Ano): R$ 4992,00 (desconto de R$ 1008,00)
-              </li>
-            </ul>
-            <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
-              Inscrever-se
-            </button>
-          </section>
+          <div className="lg:flex lg:flex-wrap lg:gap-4">
+            <section className="flex flex-col justify-between mb-5 border rounded p-2 lg:lg:w-[49%] shadow-xl">
+              <div>
+                <h2 className="text-2xl mb-1">Mentoria em Grupo</h2>
+                <p className="text-xl mb-1">Aqui você terá:</p>
+                <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+                  <li className="text-justify">
+                    - Sessões diárias de mentoria em grupo no Discord, de
+                    segunda a sexta-feira, com foco em tópicos específicos.
+                  </li>
+                  <li className="text-justify">
+                    - Acesso a materiais de estudo, recursos e exercícios
+                    práticos.
+                  </li>
+                  <li className="text-justify">
+                    - Suporte por e-mail ou mensagem para dúvidas adicionais
+                    entre as sessões.
+                  </li>
+                </ul>
+                <p className="text-lg mb-2">Valor Fixo Mensal: R$ 250,00</p>
+              </div>
+              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+                Inscrever-se
+              </button>
+            </section>
+            <section className="mb-5 border rounded p-2 lg:w-[49%] shadow-xl">
+              <h2 className="text-xl mb-1">Mentoria Individual</h2>
+              <p className="text-lg mb-1">Aqui você terá:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+                <li className="text-justify">
+                  - Sessões individuais personalizadas com foco nos objetivos e
+                  necessidades específicas de cada aluno.
+                </li>
+                <li className="text-justify">
+                  - Sessões disponíveis de segunda a sexta-feira.
+                </li>
+                <li className="text-justify">
+                  - Acesso prioritário para agendamento de sessões.
+                </li>
+                <li className="text-justify">
+                  - Revisão e feedback detalhados sobre projetos, portfólio ou
+                  trabalhos específicos.
+                </li>
+                <li className="text-justify">
+                  - Suporte por e-mail ou mensagem para dúvidas adicionais entre
+                  as sessões.
+                </li>
+              </ul>
+              <p className="text-lg mb-1">Valor Fixo Mensal: R$ 500,00</p>
+              <p className="text-lg mb-2">
+                Valor Avulso por Sessão Individual: R$ 75,00
+              </p>
+              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+                Inscrever-se
+              </button>
+            </section>
+            <section className="mb-5 border rounded p-2 lg:w-[49%] shadow-xl">
+              <h2 className="text-xl mb-1">Plano de 6 Meses</h2>
+              <p className="text-lg mb-1">Mentoria em Grupo:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+                <li className="text-justify">
+                  Valor Mensal: de{" "}
+                  <span className="line-through">R$250,00</span> por R$ 210,00
+                </li>
+                <li className="text-justify">
+                  Valor Total (6 Meses): R$ 1260,00 (desconto de R$ 240,00)
+                </li>
+              </ul>
+              <p className="text-lg mb-1">Mentoria Individual:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-5">
+                <li className="text-justify">
+                  Valor Mensal: de{" "}
+                  <span className="line-through">R$504,00</span> por R$ 416,00
+                </li>
+                <li className="text-justify">
+                  Valor Total (6 Meses): R$ 2496,00 (desconto de R$ 504,00)
+                </li>
+              </ul>
+              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+                Inscrever-se
+              </button>
+            </section>
+            <section className="mb-5 border rounded p-2 lg:w-[49%] shadow-xl">
+              <h2 className="text-xl mb-1">Plano de 1 Ano</h2>
+              <p className="text-lg mb-1">Mentoria em Grupo:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+                <li className="text-justify">
+                  Valor Mensal: de{" "}
+                  <span className="line-through">R$250,00</span> por R$ 208,00
+                </li>
+                <li className="text-justify">
+                  Valor Total (1 Ano): R$ 2496,00 (desconto de R$ 504,00)
+                </li>
+              </ul>
+              <p className="text-lg mb-1">Mentoria Individual:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-5">
+                <li className="text-justify">
+                  Valor Mensal: de{" "}
+                  <span className="line-through">R$500,00</span> por R$ 416,00
+                </li>
+                <li className="text-justify">
+                  Valor Total (1 Ano): R$ 4992,00 (desconto de R$ 1008,00)
+                </li>
+              </ul>
+              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+                Inscrever-se
+              </button>
+            </section>
+          </div>
         </section>
       </main>
       <footer className="flex justify-center p-2">
