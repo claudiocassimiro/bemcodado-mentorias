@@ -65,7 +65,7 @@ export default function Home() {
             </p>
             <a
               href="#plans"
-              className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600 md:text-2xl"
+              className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-sky-500 md:text-2xl"
             >
               Conheça nossos planos!
             </a>
@@ -85,7 +85,7 @@ export default function Home() {
               </p>
               <a
                 href="#plans"
-                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600"
+                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-sky-500"
               >
                 Conheça nossos planos!
               </a>
@@ -265,9 +265,12 @@ export default function Home() {
                 </ul>
                 <p className="text-lg mb-2">Valor Fixo Mensal: R$ 250,00</p>
               </div>
-              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              <a
+                href="mailto:claudioletras2019@gmail.com?subject=Quero saber mais sobre a Mentoria em Grupo&body=Mentoria%20em%20Grupo%0A%0AAqui%20você%20terá%3A%0A%0A- Sessões%20diárias%20de%20mentoria%20em%20grupo%20no%20Discord%2C%20de%20segunda%20a%20sexta-feira%2C%20com%20foco%20em%20tópicos%20específicos.%0A- Acesso%20a%20materiais%20de%20estudo%2C%20recursos%20e%20exercícios%20práticos.%0A- Suporte%20por%20e-mail%20ou%20mensagem%20para%20dúvidas%20adicionais%20entre%20as%20sessões.%0A%0AValor%20Fixo%20Mensal%3A%20R%24%20250%2C00"
+                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-sky-500"
+              >
                 Inscrever-se
-              </button>
+              </a>
             </section>
             <section className="mb-5 border rounded p-2 lg:w-[49%] shadow-xl">
               <h2 className="text-xl mb-1">Mentoria Individual</h2>
@@ -296,9 +299,12 @@ export default function Home() {
               <p className="text-lg mb-2">
                 Valor Avulso por Sessão Individual: R$ 75,00
               </p>
-              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              <a
+                href="mailto:claudioletras2019@gmail.com?subject=Quero%20saber%20mais%20sobre%20a%20Mentoria%20Individual&body=Mentoria%20Individual%0A%0AAqui%20você%20terá%3A%0A%0A- Sessões%20individuais%20personalizadas%20com%20foco%20nos%20objetivos%20e%20necessidades%20específicas%20de%20cada%20aluno.%0A- Sessões%20disponíveis%20de%20segunda%20a%20sexta-feira.%0A- Acesso%20prioritário%20para%20agendamento%20de%20sessões.%0A- Revisão%20e%20feedback%20detalhados%20sobre%20projetos%2C%20portfólio%20ou%20trabalhos%20específicos.%0A- Suporte%20por%20e-mail%20ou%20mensagem%20para%20dúvidas%20adicionais%20entre%20as%20sessões.%0A%0AValor%20Fixo%20Mensal%3A%20R%24%20500%2C00%0AValor%20Avulso%20por%20Sessão%20Individual%3A%20R%24%2075%2C00"
+                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-sky-500"
+              >
                 Inscrever-se
-              </button>
+              </a>
             </section>
             <section className="mb-5 border rounded p-2 lg:w-[49%] shadow-xl">
               <h2 className="text-xl mb-1">Plano de 6 Meses</h2>
@@ -309,7 +315,7 @@ export default function Home() {
                   <span className="line-through">R$250,00</span> por R$ 210,00
                 </li>
                 <li className="text-justify">
-                  Valor Total (6 Meses): R$ 1260,00 (desconto de R$ 240,00)
+                  Valor Total (6 Meses): R$ 1.260,00 (desconto de R$ 240,00)
                 </li>
               </ul>
               <p className="text-lg mb-1">Mentoria Individual:</p>
@@ -319,12 +325,15 @@ export default function Home() {
                   <span className="line-through">R$504,00</span> por R$ 416,00
                 </li>
                 <li className="text-justify">
-                  Valor Total (6 Meses): R$ 2496,00 (desconto de R$ 504,00)
+                  Valor Total (6 Meses): R$ 2.496,00 (desconto de R$ 504,00)
                 </li>
               </ul>
-              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              <a
+                href="mailto:claudioletras2019@gmail.com?subject=Quero%20assinar%20o%20plano%20de%206%20meses&body=Plano%20de%206%20Meses%0A%0AMentoria%20em%20Grupo%3A%0A%0A- Valor Mensal%3A%20de%20R%24%20250%2C00%20por%20R%24%20210%2C00%0A- Valor Total%20%286%20Meses%29%3A%20R%24%201.260%2C00%20%28desconto%20de%20R%24%20240%2C00%29%0A%0AMentoria%20Individual%3A%0A%0A- Valor Mensal%3A%20de%20R%24%20504%2C00%20por%20R%24%20416%2C00%0A- Valor Total%20%286%20Meses%29%3A%20R%24%202.496%2C00%20%28desconto%20de%20R%24%20504%2C00%29"
+                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-sky-500"
+              >
                 Inscrever-se
-              </button>
+              </a>
             </section>
             <section className="mb-5 border rounded p-2 lg:w-[49%] shadow-xl">
               <h2 className="text-xl mb-1">Plano de 1 Ano</h2>
@@ -335,7 +344,7 @@ export default function Home() {
                   <span className="line-through">R$250,00</span> por R$ 208,00
                 </li>
                 <li className="text-justify">
-                  Valor Total (1 Ano): R$ 2496,00 (desconto de R$ 504,00)
+                  Valor Total (1 Ano): R$ 2.496,00 (desconto de R$ 504,00)
                 </li>
               </ul>
               <p className="text-lg mb-1">Mentoria Individual:</p>
@@ -345,18 +354,23 @@ export default function Home() {
                   <span className="line-through">R$500,00</span> por R$ 416,00
                 </li>
                 <li className="text-justify">
-                  Valor Total (1 Ano): R$ 4992,00 (desconto de R$ 1008,00)
+                  Valor Total (1 Ano): R$ 4.992,00 (desconto de R$ 1.008,00)
                 </li>
               </ul>
-              <button className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-slate-600">
+              <a
+                href="mailto:claudioletras2019@gmail.com?subject=Quero%20assinar%20o%20plano%20de%201%20ano&body=Plano%20de%201%20Ano%0A%0AMentoria%20em%20Grupo%3A%0A%0A- Valor Mensal%3A%20de%20R%24%20250%2C00%20por%20R%24%20208%2C00%0A- Valor Total%20%281%20Ano%29%3A%20R%24%202.496%2C00%20%28desconto%20de%20R%24%20504%2C00%29%0A%0AMentoria%20Individual%3A%0A%0A- Valor Mensal%3A%20de%20R%24%20500%2C00%20por%20R%24%20416%2C00%0A- Valor Total%20%281%20Ano%29%3A%20R%24%204.992%2C00%20%28desconto%20de%20R%24%201.008%2C00%29"
+                className="border block rounded p-3 w-full text-center transition delay-180 hover:bg-sky-500"
+              >
                 Inscrever-se
-              </button>
+              </a>
             </section>
           </div>
         </section>
       </main>
       <footer className="flex justify-center p-2">
-        <p>&copy; 2024 BemCodado. Todos os direitos reservados.</p>
+        <p className="text-center lg:text-start">
+          &copy; 2024 BemCodado. Todos os direitos reservados.
+        </p>
       </footer>
     </>
   );
