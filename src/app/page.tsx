@@ -306,7 +306,90 @@ export default function Home() {
             BemCodado e transforme suas aspirações em realidade.
           </p>
           <div className="lg:flex lg:flex-wrap lg:gap-4">
-            <section className="flex flex-col justify-between mb-5 border border-slate-500 rounded p-2 lg:lg:w-[49%] shadow-xl bg-white text-black">
+            <section className="mb-5 border border-slate-500 rounded p-2 lg:w-[49%] shadow-xl bg-white text-black flex flex-col justify-between">
+              <h2 className="text-xl mb-1 font-bold">Mentoria Individual</h2>
+              <p className="text-lg mb-1">Aqui você terá:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+                <li className="text-justify">
+                  - Sessões de 1 hora, individuais e personalizada com foco nos
+                  objetivos e necessidades específicas de cada aluno.
+                </li>
+                <li className="text-justify">
+                  - Sessões disponíveis de segunda a sexta-feira.
+                </li>
+                <li className="text-justify">
+                  - Acesso prioritário para agendamento de sessões.
+                </li>
+                <li className="text-justify">
+                  - Revisão e feedback detalhados sobre projetos, portfólio ou
+                  trabalhos específicos.
+                </li>
+                <li className="text-justify">
+                  - Suporte por e-mail ou mensagem para dúvidas adicionais entre
+                  as sessões.
+                </li>
+              </ul>
+              {/* <p className="text-lg mb-1">Valor Fixo Mensal: R$ 500,00</p> */}
+              <p className="text-lg mb-2">
+                Valor por Sessão Individual: R$ 75,00 Cartão,{" "}
+                <a
+                  className="text-blue-600 underline"
+                  href="mailto:claudioletras2019@gmail.com?subject=Quero%20pagar%20a%20Mentoria%20Individual%20no%20Pix&body=Quero%20pagar%20a%20Mentoria%20Individual%20no%20Pix%0A%0AAqui%20você%20terá%3A%0A%0A- Sessões%20de%201%20hora%2C%20individuais%20e%20personalizadas%20com%20foco%20nos%20objetivos%20e%20necessidades%20específicas%20de%20cada%20aluno.%0A- Sessões%20disponíveis%20de%20segunda%20a%20sexta-feira.%0A- Acesso%20prioritário%20para%20agendamento%20de%20sessões.%0A- Revisão%20e%20feedback%20detalhados%20sobre%20projetos%2C%20portfólio%20ou%20trabalhos%20específicos.%0A- Suporte%20por%20e-mail%20ou%20mensagem%20para%20dúvidas%20adicionais%20entre%20as%20sessões.%0A%0AValor%20por%20Sessão%20Individual%20no%20pix%3A%20R%24%2060%2C00"
+                >
+                  R$ 60,00 Pix.
+                </a>
+              </p>
+              <p className="text-lg mb-2">Aceitamos todos os Cartões.</p>
+              <a
+                href="https://buy.stripe.com/eVabJvaRw37ffKwaEE"
+                className="border block rounded p-3 w-full text-center transition delay-180 text-white bg-sky-400 hover:bg-sky-500"
+              >
+                Inscrever-se
+              </a>
+            </section>
+            <section className="mb-5 border border-slate-500 rounded p-2 lg:w-[49%] shadow-xl bg-white text-black flex flex-col justify-between">
+              <h2 className="text-xl mb-1 font-bold">
+                Mentoria Individual - 10 mentorias no preço de 8
+              </h2>
+              <p className="text-lg mb-1">Aqui você terá:</p>
+              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
+                <li className="text-justify">
+                  - Sessões de 1 hora, individuais e personalizada com foco nos
+                  objetivos e necessidades específicas de cada aluno.
+                </li>
+                <li className="text-justify">
+                  - Sessões disponíveis de segunda a sexta-feira.
+                </li>
+                <li className="text-justify">
+                  - Acesso prioritário para agendamento de sessões.
+                </li>
+                <li className="text-justify">
+                  - Revisão e feedback detalhados sobre projetos, portfólio ou
+                  trabalhos específicos.
+                </li>
+                <li className="text-justify">
+                  - Suporte por e-mail ou mensagem para dúvidas adicionais entre
+                  as sessões.
+                </li>
+              </ul>
+              <p className="text-lg mb-1">
+                Valor Fixo para 10 Sessões: R$ 600,00 Cartão,{" "}
+                <a
+                  className="text-blue-600 underline"
+                  href="mailto:claudioletras2019@gmail.com?subject=Quero%20pagar%20a%20Mentoria%20Individual%20-%2010%20mentorias%20no%20pre%C3%A7o%20de%208%20no%20Pix&body=Quero%20pagar%20a%20Mentoria%20Individual%20-%2010%20mentorias%20no%20pre%C3%A7o%20de%208%20no%20Pix%0A%0AAqui%20você%20terá%3A%0A%0A- Sessões%20de%201%20hora%2C%20individuais%20personalizadas%20com%20foco%20nos%20objetivos%20e%20necessidades%20específicas%20de%20cada%20aluno.%0A- Sessões%20disponíveis%20de%20segunda%20a%20sexta-feira.%0A- Acesso%20prioritário%20para%20agendamento%20de%20sessões.%0A- Revisão%20e%20feedback%20detalhados%20sobre%20projetos%2C%20portfólio%20ou%20trabalhos%20específicos.%0A- Suporte%20por%20e-mail%20ou%20mensagem%20para%20dúvidas%20adicionais%20entre%20as%20sessões.%0A%0AValor%20Avulso%20por%20Sessão%20Individual%3A%20R%24%20480%2C00"
+                >
+                  R$ 480,00 Pix.
+                </a>
+              </p>
+              <p className="text-lg mb-2">Aceitamos todos os Cartões.</p>
+              <a
+                href="https://buy.stripe.com/28o8xj8JobDL9m8145"
+                className="border block rounded p-3 w-full text-center transition delay-180 text-white bg-sky-400 hover:bg-sky-500"
+              >
+                Inscrever-se
+              </a>
+            </section>
+            {/* <section className="flex flex-col justify-between mb-5 border border-slate-500 rounded p-2 lg:lg:w-[49%] shadow-xl bg-white text-black">
               <div>
                 <h2 className="text-2xl mb-1 font-bold">Mentoria em Grupo</h2>
                 <p className="text-xl mb-1">Aqui você terá:</p>
@@ -332,42 +415,8 @@ export default function Home() {
               >
                 Inscrever-se
               </a>
-            </section>
-            <section className="mb-5 border border-slate-500 rounded p-2 lg:w-[49%] shadow-xl bg-white text-black">
-              <h2 className="text-xl mb-1 font-bold">Mentoria Individual</h2>
-              <p className="text-lg mb-1">Aqui você terá:</p>
-              <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
-                <li className="text-justify">
-                  - Sessões individuais personalizadas com foco nos objetivos e
-                  necessidades específicas de cada aluno.
-                </li>
-                <li className="text-justify">
-                  - Sessões disponíveis de segunda a sexta-feira.
-                </li>
-                <li className="text-justify">
-                  - Acesso prioritário para agendamento de sessões.
-                </li>
-                <li className="text-justify">
-                  - Revisão e feedback detalhados sobre projetos, portfólio ou
-                  trabalhos específicos.
-                </li>
-                <li className="text-justify">
-                  - Suporte por e-mail ou mensagem para dúvidas adicionais entre
-                  as sessões.
-                </li>
-              </ul>
-              <p className="text-lg mb-1">Valor Fixo Mensal: R$ 500,00</p>
-              <p className="text-lg mb-2">
-                Valor Avulso por Sessão Individual: R$ 75,00
-              </p>
-              <a
-                href="mailto:claudioletras2019@gmail.com?subject=Quero%20saber%20mais%20sobre%20a%20Mentoria%20Individual&body=Mentoria%20Individual%0A%0AAqui%20você%20terá%3A%0A%0A- Sessões%20individuais%20personalizadas%20com%20foco%20nos%20objetivos%20e%20necessidades%20específicas%20de%20cada%20aluno.%0A- Sessões%20disponíveis%20de%20segunda%20a%20sexta-feira.%0A- Acesso%20prioritário%20para%20agendamento%20de%20sessões.%0A- Revisão%20e%20feedback%20detalhados%20sobre%20projetos%2C%20portfólio%20ou%20trabalhos%20específicos.%0A- Suporte%20por%20e-mail%20ou%20mensagem%20para%20dúvidas%20adicionais%20entre%20as%20sessões.%0A%0AValor%20Fixo%20Mensal%3A%20R%24%20500%2C00%0AValor%20Avulso%20por%20Sessão%20Individual%3A%20R%24%2075%2C00"
-                className="border block rounded p-3 w-full text-center transition delay-180 text-white bg-sky-400 hover:bg-sky-500"
-              >
-                Inscrever-se
-              </a>
-            </section>
-            <section className="mb-5 border border-slate-500 rounded p-2 lg:w-[49%] shadow-xl bg-white text-black">
+            </section> */}
+            {/* <section className="mb-5 border border-slate-500 rounded p-2 lg:w-[49%] shadow-xl bg-white text-black">
               <h2 className="text-xl mb-1 font-bold">Plano de 6 Meses</h2>
               <p className="text-lg mb-1">Mentoria em Grupo:</p>
               <ul className="flex flex-col gap-3 border rounded p-2 shadow-md mb-2">
@@ -424,7 +473,7 @@ export default function Home() {
               >
                 Inscrever-se
               </a>
-            </section>
+            </section> */}
           </div>
         </section>
       </main>
