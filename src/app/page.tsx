@@ -373,6 +373,10 @@ export default function Home() {
                   - Suporte por e-mail ou mensagem para dúvidas adicionais entre
                   as sessões.
                 </li>
+                <li className="text-justify">
+                  - Acesso vitalício ao curso de Fundamentos do Desenvolvimento
+                  Web da BemCodado.
+                </li>
               </ul>
               <p className="text-lg mb-1">
                 Valor Fixo para 10 Sessões: R$ 600,00 Cartão,{" "}
