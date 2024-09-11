@@ -1,3 +1,4 @@
+import { Cursos } from "@/components/cursos";
 import Image from "next/image";
 import {
   FaSquareGithub,
@@ -341,6 +342,7 @@ export default function Home() {
               </p>
               <p className="text-lg mb-2">Aceitamos todos os Cartões.</p>
               <a
+                target="_blank"
                 href="https://buy.stripe.com/eVabJvaRw37ffKwaEE"
                 className="border block rounded p-3 w-full text-center transition delay-180 text-white bg-sky-400 hover:bg-sky-500"
               >
@@ -383,6 +385,7 @@ export default function Home() {
               </p>
               <p className="text-lg mb-2">Aceitamos todos os Cartões.</p>
               <a
+                target="_blank"
                 href="https://buy.stripe.com/28o8xj8JobDL9m8145"
                 className="border block rounded p-3 w-full text-center transition delay-180 text-white bg-sky-400 hover:bg-sky-500"
               >
@@ -476,6 +479,8 @@ export default function Home() {
             </section> */}
           </div>
         </section>
+        <hr />
+        <Cursos />
       </main>
       <footer className="flex justify-center p-2">
         <p className="text-center lg:text-start">
