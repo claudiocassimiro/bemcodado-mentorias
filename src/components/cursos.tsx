@@ -77,7 +77,7 @@ export function Cursos() {
           className="mb-12 bg-white rounded-lg shadow-lg overflow-hidden border border-black"
         >
           <div className="bg-white text-white p-6">
-            <div className="flex justify-between">
+            <div className="flex flex-col justify-between gap-2 lg:flex-row">
               <h2 className="text-3xl font-semibold text-black">
                 {course.title}
               </h2>
