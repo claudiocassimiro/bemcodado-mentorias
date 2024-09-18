@@ -58,8 +58,10 @@ export function Cursos() {
 
   return (
     <div className="text-gray-800 pt-8">
-      <h1 className="text-4xl font-bold mb-5 text-white">Nossos Cursos</h1>
-      <p className="mb-5 text-justify lg:text-xl text-white">
+      <h1 className="text-3xl lg:text-4xl font-bold mb-10 text-center text-white">
+        Nossos Cursos
+      </h1>
+      <p className="text-xl mb-12 text-center max-w-3xl mx-auto text-white">
         Os cursos da BemCodado visam ajudar você a conquistar seus objetivos de
         carreira no seu tempo. Sem prazos e cobranças. Aprenda da sua forma e
         receba todo o apoio necessário via{" "}
@@ -84,7 +86,7 @@ export function Cursos() {
               <a
                 target="_blank"
                 href="https://buy.stripe.com/5kA4h38Jo5fnbug4gj"
-                className="border rounded p-3 text-center transition delay-180 text-white bg-sky-400 hover:bg-sky-500"
+                className="border rounded-lg p-3 text-center transition text-white bg-primary hover:bg-primary-dark duration-300"
               >
                 Comprar agora
               </a>
