@@ -43,7 +43,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br" className={inter.className}>
-      <body className="flex flex-col min-h-screen bg-gradient-to-b from-sky-400 to-sky-600">
+      <body
+        className="flex flex-col min-h-screen"
+        style={{ backgroundColor: "#37BBF7" }}
+      >
         {/* <Header /> */}
         <main className="flex-grow container mx-auto px-4 py-8">
           {children}
