@@ -85,14 +85,15 @@ export function Cursos() {
               </h2>
               <a
                 target="_blank"
-                href="https://buy.stripe.com/5kA4h38Jo5fnbug4gj"
+                href="https://bem-codado-course-platform.vercel.app/?vercelToolbarCode=DrW82hRnlFnWFYI"
                 className="border rounded-lg p-3 text-center transition text-white bg-primary hover:bg-primary-dark duration-300"
               >
-                Comprar agora
+                Acessar o curso
               </a>
             </div>
             <p className="text-xl mt-2 text-black">
-              {course.price} - {course.access}
+              <span className="line-through">{course.price}</span> FREE -{" "}
+              {course.access}
             </p>
           </div>
           <hr />

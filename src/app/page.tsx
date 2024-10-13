@@ -166,7 +166,7 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <div className="w-full lg:w-1/2 mb-8 lg:mb-0 text-center lg:text-left">
               <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6">
-                Bem-Vindo à <span className="text-black">BemCodado!</span>
+                Bem-Vindo à <span className="text-white">BemCodado!</span>
               </h1>
               <p className="text-lg md:text-xl mb-6 md:mb-8">
                 Na BemCodado, estamos comprometidos em ajudar você a alcançar
@@ -175,7 +175,7 @@ export default function Home() {
               </p>
               <a
                 href="#plans"
-                className="bg-black text-white font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition duration-300 inline-block"
+                className="bg-white text-black font-bold py-3 px-6 rounded-full hover:bg-opacity-90 transition duration-300 inline-block"
               >
                 Conheça nossos planos!
               </a>
