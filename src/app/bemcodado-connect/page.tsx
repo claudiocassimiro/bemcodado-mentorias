@@ -17,7 +17,7 @@ export default function BemCodadoConnect() {
     >
       <header className="text-white py-6">
         <div className="container mx-auto px-4">
-          <div className="relative w-60 h-12 lg:w-64 lg:h-12  mx-auto">
+          <div className="relative w-60 h-12 lg:w-64 lg:h-12 mx-auto">
             <Image
               src="/images/logo-bemcodado-connect.png"
               alt="logo da bemcodado connect"
@@ -30,17 +30,17 @@ export default function BemCodadoConnect() {
       <main className="flex-grow">
         <section className="text-white py-20">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               🎉 Eleve sua Jornada como Desenvolvedor(a)! 🚀
             </h2>
-            <p className="text-xl mb-8">
+            <p className="text-lg md:text-xl mb-8">
               Junte-se ao BemCodado Connect e transforme sua carreira na
               programação
             </p>
             <Link
               target="_blank"
               href="https://wa.me/5581993520671?text=Ol%C3%A1%2C%20fiquei%20interessado(a)%20em%20fazer%20parte%20da%20comunidade%20BemCodado%20Connect%2C%20quero%20efetuar%20o%20pagamento%20e%20fazer%20minha%20inscri%C3%A7%C3%A3o!"
-              className="inline-block bg-white text-[#333333] px-8 py-3 rounded-full text-lg font-semibold transition-colors hover:bg-gray-200"
+              className="inline-block bg-white text-[#333333] px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-colors hover:bg-gray-200"
             >
               Comece Agora
             </Link>
@@ -49,13 +49,13 @@ export default function BemCodadoConnect() {
 
         <section className="py-16">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
               👨‍🏫 O que é o BemCodado Connect?
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-white">
                 <CheckCircle className="w-12 h-12 mb-4 mx-auto" />
-                <h4 className="text-xl font-semibold mb-2 text-center">
+                <h4 className="text-lg md:text-xl font-semibold mb-2 text-center">
                   Projetos Incríveis
                 </h4>
                 <p className="text-center">
@@ -65,7 +65,7 @@ export default function BemCodadoConnect() {
               </div>
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-white">
                 <MessageCircle className="w-12 h-12 mb-4 mx-auto" />
-                <h4 className="text-xl font-semibold mb-2 text-center">
+                <h4 className="text-lg md:text-xl font-semibold mb-2 text-center">
                   Tire Suas Dúvidas
                 </h4>
                 <p className="text-center">
@@ -75,7 +75,7 @@ export default function BemCodadoConnect() {
               </div>
               <div className="bg-white bg-opacity-10 rounded-lg p-6 text-white">
                 <Users className="w-12 h-12 mb-4 mx-auto" />
-                <h4 className="text-xl font-semibold mb-2 text-center">
+                <h4 className="text-lg md:text-xl font-semibold mb-2 text-center">
                   Comunidade Ativa
                 </h4>
                 <p className="text-center">
@@ -89,14 +89,14 @@ export default function BemCodadoConnect() {
 
         <section className="bg-white bg-opacity-10 py-16">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold text-white mb-8 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-8 text-center">
               💡 Benefícios Exclusivos
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="flex items-start">
                 <Video className="text-white mr-4 flex-shrink-0 w-8 h-8" />
                 <div>
-                  <h4 className="text-xl font-semibold text-white mb-2">
+                  <h4 className="text-lg md:text-xl font-semibold text-white mb-2">
                     Gravações das Sessões
                   </h4>
                   <p className="text-white">
@@ -108,7 +108,7 @@ export default function BemCodadoConnect() {
               <div className="flex items-start">
                 <FileText className="text-white mr-4 flex-shrink-0 w-8 h-8" />
                 <div>
-                  <h4 className="text-xl font-semibold text-white mb-2">
+                  <h4 className="text-lg md:text-xl font-semibold text-white mb-2">
                     Desafios Semanais
                   </h4>
                   <p className="text-white">
@@ -119,7 +119,7 @@ export default function BemCodadoConnect() {
               <div className="flex items-start">
                 <FileText className="text-white mr-4 flex-shrink-0 w-8 h-8" />
                 <div>
-                  <h4 className="text-xl font-semibold text-white mb-2">
+                  <h4 className="text-lg md:text-xl font-semibold text-white mb-2">
                     Material Exclusivo
                   </h4>
                   <p className="text-white">
@@ -130,7 +130,7 @@ export default function BemCodadoConnect() {
               <div className="flex items-start">
                 <Users className="text-white mr-4 flex-shrink-0 w-8 h-8" />
                 <div>
-                  <h4 className="text-xl font-semibold text-white mb-2">
+                  <h4 className="text-lg md:text-xl font-semibold text-white mb-2">
                     Grupo Fechado
                   </h4>
                   <p className="text-white">
@@ -145,7 +145,7 @@ export default function BemCodadoConnect() {
 
         <section className="py-16 text-white">
           <div className="container mx-auto px-4">
-            <h3 className="text-3xl font-bold mb-8 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold mb-8 text-center">
               O Que Nossos Alunos Dizem
             </h3>
             <div className="grid md:grid-cols-3 gap-8">
@@ -179,12 +179,12 @@ export default function BemCodadoConnect() {
 
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
-            <h3 className="text-3xl font-bold text-white mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold text-white mb-8">
               📅 Quando Acontece?
             </h3>
             <div className="bg-white bg-opacity-10 rounded-lg p-8 inline-block">
-              <CalendarDays className="w-16 h-16 text-white mb-4 mx-auto" />
-              <p className="text-xl text-white">
+              <CalendarDays className="w-12 h-12 md:w-16 md:h-16 text-white mb-4 mx-auto" />
+              <p className="text-lg md:text-xl text-white">
                 Toda sexta-feira, das 19h às 20h30 (horário de Brasília)
               </p>
             </div>
@@ -193,19 +193,23 @@ export default function BemCodadoConnect() {
 
         <section className="text-white py-16">
           <div className="container mx-auto px-4 text-center">
-            <h3 className="text-3xl font-bold mb-6">Invista no Seu Futuro</h3>
-            <p className="text-2xl mb-8">
+            <h3 className="text-2xl md:text-3xl font-bold mb-6">
+              Invista no Seu Futuro
+            </h3>
+            <p className="text-xl md:text-2xl mb-8">
               Por apenas <span className="font-bold">R$ 50/mês</span> ou{" "}
               <span className="font-bold">R$ 500/ano</span>
             </p>
             <Link
               target="_blank"
               href="https://wa.me/5581993520671?text=Ol%C3%A1%2C%20fiquei%20interessado(a)%20em%20fazer%20parte%20da%20comunidade%20BemCodado%20Connect%2C%20quero%20efetuar%20o%20pagamento%20e%20fazer%20minha%20inscri%C3%A7%C3%A3o!"
-              className="inline-block bg-white text-[#333333] px-8 py-3 rounded-full text-lg font-semibold transition-colors hover:bg-gray-200"
+              className="inline-block bg-white text-[#333333] px-6 py-3 rounded-full text-base md:text-lg font-semibold transition-colors hover:bg-gray-200"
             >
               Inscreva-se Agora
             </Link>
-            <p className="mt-6 text-lg">📌 Vagas limitadas – Garanta a sua!</p>
+            <p className="mt-6 text-base md:text-lg">
+              📌 Vagas limitadas – Garanta a sua!
+            </p>
           </div>
         </section>
       </main>
