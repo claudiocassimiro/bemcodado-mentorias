@@ -53,18 +53,21 @@ const courses = [
   },
 ];
 
-export function Cursos() {
+export function Cursos({
+  title = "Nossos Cursos",
+  description = `Os cursos da BemCodado visam ajudar você a conquistar seus objetivos de
+        carreira no seu tempo. Sem prazos e cobranças. Aprenda da sua forma e
+        receba todo o apoio necessário via`,
+}) {
   const [expandedModule, setExpandedModule] = useState<string | null>(null);
 
   return (
     <div className="text-gray-800 pt-8">
       <h1 className="text-3xl lg:text-4xl font-bold mb-10 text-center text-white">
-        Nossos Cursos
+        {title}
       </h1>
       <p className="text-xl mb-12 text-center max-w-3xl mx-auto text-white">
-        Os cursos da BemCodado visam ajudar você a conquistar seus objetivos de
-        carreira no seu tempo. Sem prazos e cobranças. Aprenda da sua forma e
-        receba todo o apoio necessário via{" "}
+        {description}{" "}
         <a
           className="underline"
           href="https://discord.gg/fvDYw2R2tX"

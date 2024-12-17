@@ -8,6 +8,7 @@ import {
   CheckCircle,
 } from "lucide-react";
 import Image from "next/image";
+import { Cursos } from "@/components/cursos";
 
 export default function BemCodadoConnect() {
   return (
@@ -176,6 +177,11 @@ export default function BemCodadoConnect() {
             </div>
           </div>
         </section>
+
+        <Cursos
+          title="A BemCodado oferece conteúdos gratuitos"
+          description="Temos um canal no YouTube com mais de 50 vídeos repletos de conteúdo e uma comunidade gratuita no Discord, onde você pode aprender e trocar experiências! Acesse nosso"
+        />
 
         <section className="py-16">
           <div className="container mx-auto px-4 text-center">
