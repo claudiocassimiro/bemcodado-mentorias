@@ -339,7 +339,7 @@ export default function BemCodadoConnect() {
             </div>
             <div className="text-center">
               <Link
-                href="https://wa.me/5581993520671?text=Ol%C3%A1%2C%20fiquei%20interessado(a)%20no%20curso%20de%20ingl%C3%AAs%20t%C3%A9cnico%20do%20BemCodado%20Connect.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"
+                href="https://wa.me/5581993520671?text=Ol%C3%A1%2C%20fiquei%20interessado(a)%20no%20BemCodado%20Connect.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"
                 className="inline-block bg-white text-sky-400 px-8 py-4 rounded-full text-lg font-semibold transition-colors hover:bg-blue-100"
               >
                 Saiba Mais Sobre o Inglês Técnico
@@ -373,12 +373,12 @@ export default function BemCodadoConnect() {
               Invista no Seu Futuro
             </h2>
             <p className="text-xl md:text-2xl mb-8">
-              Por apenas <span className="font-bold">R$ 120/mês</span> ou{" "}
-              <span className="font-bold">R$ 1000/ano</span>
+              Por apenas <span className="font-bold">R$ 150/mês</span> ou{" "}
+              <span className="font-bold">R$ 1400/ano</span>
             </p>
             <Link
               target="_blank"
-              href="https://wa.me/5581993520671?text=Ol%C3%A1%2C%20fiquei%20interessado(a)%20em%20fazer%20parte%20da%20comunidade%20BemCodado%20Connect%2C%20quero%20efetuar%20o%20pagamento%20e%20fazer%20minha%20inscri%C3%A7%C3%A3o!"
+              href="https://wa.me/5581993520671?text=Ol%C3%A1%2C%20fiquei%20interessado(a)%20no%20BemCodado%20Connect.%20Gostaria%20de%20mais%20informa%C3%A7%C3%B5es!"
               className="inline-block bg-white text-sky-400 px-8 py-4 rounded-full text-lg font-semibold transition-colors hover:bg-blue-100"
             >
               Inscreva-se Agora
