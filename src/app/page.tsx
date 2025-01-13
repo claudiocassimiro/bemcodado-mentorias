@@ -2,6 +2,7 @@
 
 import { Cursos } from "@/components/cursos";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import {
   FaSquareGithub,
@@ -498,7 +499,7 @@ export default function Home() {
               direção ao seu sucesso na programação. Junte-se à comunidade
               BemCodado e transforme suas aspirações em realidade.
             </p>
-            <div className="grid md:grid-cols-2 gap-8">
+            <div className="flex flex-wrap justify-center gap-8">
               {[
                 {
                   title: "Mentoria Individual",
@@ -512,6 +513,8 @@ export default function Home() {
                   ],
                   price: "R$ 75,00 Cartão, R$ 60,00 Pix",
                   link: "https://buy.stripe.com/eVabJvaRw37ffKwaEE",
+                  pixTextLink:
+                    "https://wa.me/5581993520671?text=Ol%C3%A1%20Cl%C3%A1udio!%20Quero%20pagar%20a%20mentoria%20de%201%20hora%20no%20pix.",
                 },
                 {
                   title: "Mentoria Individual - 10 mentorias no preço de 8",
@@ -525,6 +528,23 @@ export default function Home() {
                   ],
                   price: "R$ 600,00 Cartão, R$ 480,00 Pix",
                   link: "https://buy.stripe.com/28o8xj8JobDL9m8145",
+                  pixTextLink:
+                    "https://wa.me/5581993520671?text=Ol%C3%A1%20Cl%C3%A1udio!%20Quero%20pagar%20o%20Plano%20de%2010%20mentorias%20no%20pre%C3%A7o%20de%208%20no%20pix.",
+                },
+                {
+                  title: "Mentoria Individual 30 minutos",
+                  features: [
+                    "Sessões rápidas, diretas e objetivas com duração de 30 minutos",
+                    "Disponível para agendamento de segunda a sexta-feira",
+                    "Ajuda personalizada para resolver dúvidas pontuais",
+                    "Orientação técnica sobre problemas específicos em projetos",
+                    "Feedback prático e direcionado durante a sessão",
+                    "Sem necessidade de compromisso contínuo: agende conforme sua necessidade",
+                  ],
+                  price: "R$ 60,00 Cartão, R$ 45,00 Pix",
+                  link: "https://buy.stripe.com/5kA4h38Jo5fnbug4gj",
+                  pixTextLink:
+                    "https://wa.me/5581993520671?text=Ol%C3%A1%20Cl%C3%A1udio!%20Quero%20pagar%20a%20mentoria%20de%2030%20minutos%20com%20pix.",
                 },
               ].map((plan, index) => (
                 <div
@@ -560,8 +580,8 @@ export default function Home() {
                       ))}
                     </ul>
                   </div>
-                  <div>
-                    <p className="text-xl font-bold mb-4 text-black">
+                  <div className="flex flex-col items-center">
+                    <p className="text-xl font-bold mb-4 text-black self-start">
                       {plan.price}
                     </p>
                     <a
@@ -570,8 +590,15 @@ export default function Home() {
                       rel="noopener noreferrer"
                       className="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-opacity-90 transition duration-300"
                     >
-                      Inscrever-se
+                      Pagar com Cartão
                     </a>
+                    <Link
+                      target="_blank"
+                      href={plan.pixTextLink}
+                      className="inline-block text-gray-500 px-8 py-4 text-lg font-semibold transition-colors hover:text-gray-600"
+                    >
+                      Quero pagar com Pix
+                    </Link>
                   </div>
                 </div>
               ))}
