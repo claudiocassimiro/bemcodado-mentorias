@@ -209,7 +209,7 @@ export default function Component() {
 
       <footer className="bg-[#1e293b] py-8 mt-12">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2023 BemCodado Mentorias. Todos os direitos reservados.</p>
+          <p>&copy; 2025 BemCodado Mentorias. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
