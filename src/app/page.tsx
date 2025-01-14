@@ -58,6 +58,14 @@ export default function Home() {
           </div>
           <nav className="hidden lg:flex items-center space-x-4">
             <a
+              href="/blog"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-white cursor-pointer font-bold underline"
+            >
+              Blog
+            </a>
+            <a
               href="/bemcodado-connect"
               target="_blank"
               rel="noopener noreferrer"
@@ -129,10 +137,20 @@ export default function Home() {
           }`}
         >
           <nav className="container mx-auto py-4">
-            <ul className="flex justify-center items-center gap-4">
+            <ul className="flex flex-col justify-center items-center gap-4">
               <li>
                 <a
-                  href="https://bemcodado-mentorias.vercel.app/bemcodado-connect"
+                  href="/blog"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-blue-500 cursor-pointer font-bold underline"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/bemcodado-connect"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-blue-500 cursor-pointer font-bold underline"
