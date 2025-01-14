@@ -393,7 +393,7 @@ export default function BemCodadoConnect() {
           <p className="mb-4 text-lg">
             Vamos juntos nessa jornada? 🚀 #BemCodadoConnect
           </p>
-          <p>&copy; 2024 BemCodado Connect. Todos os direitos reservados.</p>
+          <p>&copy; 2025 BemCodado Connect. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
