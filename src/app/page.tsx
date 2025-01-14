@@ -628,7 +628,7 @@ export default function Home() {
       </main>
       <footer className="bg-[#37BBF7] text-white py-8">
         <div className="container mx-auto px-4 text-center">
-          <p>&copy; 2024 BemCodado. Todos os direitos reservados.</p>
+          <p>&copy; 2025 BemCodado. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
