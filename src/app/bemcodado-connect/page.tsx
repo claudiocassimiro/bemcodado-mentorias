@@ -361,7 +361,7 @@ export default function BemCodadoConnect() {
             <div className="bg-white rounded-lg p-8 inline-block shadow-lg">
               <CalendarDays className="w-12 h-12 md:w-16 md:h-16 text-sky-400 mb-4 mx-auto" />
               <p className="text-lg md:text-xl text-gray-700">
-                Toda sexta-feira, das 19h às 20h30 (horário de Brasília)
+                Segunda e Quarta, das 18h00 às 20h00 (horário de Brasília)
               </p>
             </div>
           </div>
