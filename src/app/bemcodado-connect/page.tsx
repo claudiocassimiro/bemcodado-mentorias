@@ -373,8 +373,8 @@ export default function BemCodadoConnect() {
               Invista no Seu Futuro
             </h2>
             <p className="text-xl md:text-2xl mb-8">
-              Por apenas <span className="font-bold">R$ 150/mês</span> ou{" "}
-              <span className="font-bold">R$ 1400/ano</span>
+              Por apenas <span className="font-bold">R$ 149,90/mês</span> ou{" "}
+              <span className="font-bold">R$ 1399,90/ano</span>
             </p>
             <Link
               target="_blank"
