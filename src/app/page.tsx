@@ -529,7 +529,7 @@ export default function Home() {
                     "Suporte por e-mail ou mensagem entre as sessões",
                     "Acesso vitalício ao curso de Fundamentos do Desenvolvimento Web",
                   ],
-                  price: "R$ 75,00 Cartão, R$ 60,00 Pix",
+                  price: "R$ 89,90 Cartão, R$ 74,90 Pix",
                   link: "https://buy.stripe.com/eVabJvaRw37ffKwaEE",
                   pixTextLink:
                     "https://wa.me/5581993520671?text=Ol%C3%A1%20Cl%C3%A1udio!%20Quero%20pagar%20a%20mentoria%20de%201%20hora%20no%20pix.",
@@ -544,7 +544,7 @@ export default function Home() {
                     "Suporte por e-mail ou mensagem entre as sessões",
                     "Acesso vitalício ao curso de Fundamentos do Desenvolvimento Web",
                   ],
-                  price: "R$ 600,00 Cartão, R$ 480,00 Pix",
+                  price: "R$ 624,90 Cartão, R$ 599,90 Pix",
                   link: "https://buy.stripe.com/28o8xj8JobDL9m8145",
                   pixTextLink:
                     "https://wa.me/5581993520671?text=Ol%C3%A1%20Cl%C3%A1udio!%20Quero%20pagar%20o%20Plano%20de%2010%20mentorias%20no%20pre%C3%A7o%20de%208%20no%20pix.",
